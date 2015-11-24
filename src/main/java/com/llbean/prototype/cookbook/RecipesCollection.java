@@ -27,7 +27,7 @@ public class RecipesCollection {
     	// Lookup by ID
     	Recipe r = cookbook.findRecipe(id);
     	
-    	// Return the customer (or 404 not found)
+    	// Return the recipe (or 404 not found)
     	Response response;
     	if (r == null) {
     		response = Response.status(Status.NOT_FOUND).build();
